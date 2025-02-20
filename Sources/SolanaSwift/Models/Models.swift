@@ -108,6 +108,11 @@ public struct FeeCalculatorResponse: Decodable {
     public let lamportsPerSignature: Lamports
 }
 
+public struct LatestBlockhash: Decodable {
+    public let blockhash: String
+    public let lastValidBlockHeight: UInt64
+}
+
 public struct FeeRateGovernor: Decodable {
     public let burnPercent: UInt64
     public let maxLamportsPerSignature: Lamports
